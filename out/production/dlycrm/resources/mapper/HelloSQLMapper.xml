@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 上面的内容是mybatis文件的头文件信息 -->
+<mapper namespace="com.gxaedu.crm.pojo.HelloSQLMapper">
+    <!--  namespace的作用是关联对应的mapper接口 -->
+    <!-- 点出来的方式叫做导航功能，建议大家一定要使用导航，企业规则 -->
+    <!-- mapper中编写的就是各种各样的SQL语句和类类型关联 -->
+    <!-- id是唯一的，每一个sql操作语句都是单独一个id  -->
+    <!-- id其实是pojo/mapper接口定义的抽象方法名 -->
+    <!-- resultType属性指定的是返回什么pojo类型,需要加上包名 -->
+    <select id="selectUser" resultType="com.gxaedu.crm.pojo.HelloSQL">
+        select h.id,h.username,h.password from hellosql h;
+    </select>
+
+    <select id="selectUserById"
+            parameterType="java.lang.String"
+            resultType="com.gxaedu.crm.pojo.HelloSQL">
+        select h.id,h.username,h.password from hellosql h where id=#{id};
+        <!-- select h.id,h.username,h.password from hellosql h where id=1;  -->
+        <!-- select h.id,h.username,h.password from hellosql h where id=2;  -->
+        <!--  多参数传递  parameterType的作用  -->
+        <!-- #id代表预处理任务  预处理集  -->
+    </select>
+</mapper>
