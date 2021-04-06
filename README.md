@@ -6,7 +6,9 @@
 使用的语言以及开发框架：JAVA、JS/bootstrap/CSS、SSM、Mybatis 
 
 项目功能：用户登录(拦截)、用户退出；用户管理(增删改查)；获取第三方接口实现天气预报实时更新；动态产生数据变化线路 图 ；个人信息模块(查询修改)等
-功能还未完全实现，我需要努力完善此项目
+
+
+
 ![image](https://user-images.githubusercontent.com/56214899/113736770-faaf9480-972f-11eb-82ce-3775bdff97bf.png)
 ![image](https://user-images.githubusercontent.com/56214899/113736788-ff744880-972f-11eb-9812-922abf34b32d.png)
 ![image](https://user-images.githubusercontent.com/56214899/113736791-01d6a280-9730-11eb-8b8b-262a90649217.png)
@@ -18,3 +20,5 @@
 ![image](https://user-images.githubusercontent.com/56214899/113736864-0f8c2800-9730-11eb-981a-8247f4895525.png)
 ![image](https://user-images.githubusercontent.com/56214899/113736871-1155eb80-9730-11eb-8244-4ca4ef912ffb.png)
 
+
+功能还未完全实现，我需要努力完善此项目
